@@ -8,7 +8,7 @@ run wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apache-tomc
 
 
 run mkdir /opt/COE
-run tar xvf apache-tomcat-8.0.32.tar.gz -C /opt/COE --strip-components=1
+run tar xvf apache-tomcat-8.0.32.tar.gz -C /opt/COE 
 
 workdir /opt/COE
 run chgrp -R tomcat /opt/COE
