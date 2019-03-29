@@ -11,10 +11,6 @@ run mkdir /opt/COE
 run tar xvf apache-tomcat-8.0.32.tar.gz -C /opt/COE 
 
 workdir /opt/COE
-run chgrp -R tomcat /opt/COE
-run chmod -R g+r conf &&  chmod g+x conf
-run chown -R tomcat webapps/ work/ temp/ logs/
-copy tomcat.service /etc/systemd/system/tomcat.service
-run ls /opt/COE/bin
+
 CMD ["/opt/COE/bin/catalina.sh","run"] 
 
